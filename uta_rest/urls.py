@@ -4,9 +4,10 @@ The `urlpatterns` list routes URLs to views. For more information please see:
 """
 from django.urls import path
 
-from cdot_rest import views
+from uta_rest import views
 
 urlpatterns = [
     path('', views.index, name='index'),
     path('transcript/<transcript_version>', views.transcript, name='transcript'),
+    path('transcript/<uta_version>/<transcript_version>', views.uta_transcript, name='uta_transcript'),
 ]

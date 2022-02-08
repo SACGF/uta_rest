@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>cdot: HGVS Transcript REST API</title>
+        <title>UTA REST</title>
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon.ico">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     </head>
@@ -11,9 +11,8 @@
         <div class="container py-4">
             <div class="p-5 mb-4 bg-light rounded-3 border">
                 <div class="container-fluid py-5">
-                <h1 class="display-5 fw-bold">cdot.cc</h1>
+                <h1 class="display-5 fw-bold">UTA REST</h1>
                 <p class="text-muted">HGVS Transcript REST API</p>
-                <p class="col-md-8 fs-4">This server hosts 801,653 transcript versions to resolve HGVS.</p>
             </div>
         </div>
 
@@ -24,10 +23,9 @@
                     <h4 class="my-0 fw-normal">RefSeq</h4>
                 </div>
                 <div class="card-body">
-                    <h1 class="card-title">414,579 <small class="text-muted fw-light">transcripts</small></h1>
                     <ul class="list-unstyled mt-3 mb-4">
                     <li>Examples</li>
-                    <li><a href="https://cdot.cc/transcript/NM_001001890.3">NM_001001890.3</a></li>
+                    <li><a href="{% url 'transcript' 'NM_001001890.3' %}">NM_001001890.3</a></li>
                     </ul>
                 </div>
                 </div>
@@ -38,16 +36,15 @@
                     <h4 class="my-0 fw-normal">Ensembl</h4>
                 </div>
                 <div class="card-body">
-                    <h1 class="card-title">387,074 <small class="text-muted fw-light">transcripts</small></h1>
                     <ul class="list-unstyled mt-3 mb-4">
                     <li>Examples</li>
-                    <li><a href="https://cdot.cc/transcript/ENST00000344691.8">ENST00000344691.8</a></li>
+                    <li><a href="{% url 'transcript' 'ENST00000344691.8' %}">ENST00000344691.8</a></li>
                     </ul>
                 </div>
                 </div>
             </div>
         </div>
-        <p class="text-info">GitHub : <a href="https://github.com/SACGF/cdot">cdot</a> | <a href="https://github.com/SACGF/cdot_rest">cdot REST</a></p>
+        <p class="text-info">GitHub : <a href="https://github.com/biocommons/uta">uta</a> | <a href="https://github.com/SACGF/uta_rest">uta REST</a></p>
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     </body>
