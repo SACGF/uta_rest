@@ -61,7 +61,7 @@ def _get_data_from_uta(uta_version, transcript_version):
         inner join "{uta_version}".origin origin on (transcript.origin_id = origin.origin_id)
         Inner join "{uta_version}".exon as exon on (es.exon_set_id = exon.exon_set_id)
         inner join "{uta_version}".exon_aln exon_aln on (exon_aln.alt_exon_id = exon.exon_id)
-        WHERE transcript.ac = %s AND es.alt_ac = ANY(%s) and origin.origin_id not in (10, 11)
+        WHERE transcript.ac = %s AND es.alt_ac = ANY(%s)
         group by transcript.ac
         """
 

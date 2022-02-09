@@ -25,6 +25,7 @@
                 <div class="card-body">
                     <ul class="list-unstyled mt-3 mb-4">
                     <li>Examples</li>
+                    <li><a href="{% url 'transcript' 'NM_007294.4' %}">NM_007294.4</a></li>
                     <li><a href="{% url 'transcript' 'NM_001001890.3' %}">NM_001001890.3</a></li>
                     </ul>
                 </div>
@@ -38,12 +39,32 @@
                 <div class="card-body">
                     <ul class="list-unstyled mt-3 mb-4">
                     <li>Examples</li>
-                    <li><a href="{% url 'transcript' 'ENST00000344691.8' %}">ENST00000344691.8</a></li>
+                    <li><a href="{% url 'transcript' 'ENST00000344691' %}">ENST00000344691</a></li>
+                    <li><a href="{% url 'transcript' 'ENST00000586385' %}">ENST00000586385</a></li>
                     </ul>
                 </div>
                 </div>
             </div>
         </div>
+        <div class="row row-cols-1 row-cols-md-1 mb-3 text-center">
+            <div class="col">
+                <div class="card mb-6 rounded-3 shadow-sm">
+                <div class="card-header py-3">
+                    <h4 class="my-0 fw-normal">UTA versions</h4>
+                </div>
+                <div class="card-body">
+                    <p>You can also specify UTA versions</p>
+
+                    <ul class="list-unstyled mt-3 mb-4">
+                    <li>Examples</li>
+                    <li><a href="{% url 'uta_transcript' 'uta_20140210' 'NM_001001890.2' %}">uta_20140210 / NM_001001890.2</a></li>
+                    <li><a href="{% url 'uta_transcript' 'uta_20210129' 'NM_001001890.2' %}">uta_20210129 / NM_001001890.2</a></li>
+                    </ul>
+                </div>
+                </div>
+            </div>
+        </div>
+
         <p class="text-info">GitHub : <a href="https://github.com/biocommons/uta">uta</a> | <a href="https://github.com/SACGF/uta_rest">uta REST</a></p>
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
