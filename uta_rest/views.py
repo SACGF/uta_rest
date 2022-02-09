@@ -51,26 +51,30 @@ def _get_data_from_uta(uta_version, transcript_version):
 
         build_sql = f"""
         SELECT
+        es.alt_aln_method as alt_aln_method,
         string_agg(distinct es.alt_ac::varchar, ',') as contig,
         string_agg(distinct es.alt_strand::varchar, ',') as strand,
         string_agg(exon.start_i::varchar, ',' order by exon.ord) as exon_starts,
         string_agg(exon.end_i::varchar, ',' order by exon.ord) as exon_ends,
         string_agg(exon_aln.cigar, ',' order by exon.ord) as cigars
         from "{uta_version}".transcript transcript
-        inner join "{uta_version}".exon_set es on (transcript.ac = es.tx_ac AND alt_aln_method = 'splign')
+        inner join "{uta_version}".exon_set es on (transcript.ac = es.tx_ac)
         inner join "{uta_version}".origin origin on (transcript.origin_id = origin.origin_id)
         Inner join "{uta_version}".exon as exon on (es.exon_set_id = exon.exon_set_id)
         inner join "{uta_version}".exon_aln exon_aln on (exon_aln.alt_exon_id = exon.exon_id)
         WHERE transcript.ac = %s AND es.alt_ac = ANY(%s)
-        group by transcript.ac
+        group by transcript.ac, es.alt_aln_method
+        order by es.alt_aln_method
+        limit 1
         """
 
         for genome_build, contigs in settings.GENOME_BUILD_CONTIGS.items():
             cursor.execute(build_sql, [transcript_version, contigs])
             if row := cursor.fetchone():
-                (contig, strand, exon_starts, exon_ends, cigars) = row
+                (alt_aln_method, contig, strand, exon_starts, exon_ends, cigars) = row
                 data["genome_builds"][genome_build] = {
                     "contig": contig,
+                    "alt_aln_method": alt_aln_method,
                     "strand": "+" if strand == 1 else "-",
                     "exons": _convert_uta_exons(exon_starts, exon_ends, cigars),
                 }
