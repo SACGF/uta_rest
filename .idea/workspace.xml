@@ -5,32 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e9354746-f473-4194-bb34-ea70e3ed0aa2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uta_rest.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/cdot_rest.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cdot_json/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/uta_rest/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cdot_json/apps.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cdot_json/management/commands/import_transcript_json.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cdot_rest/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/uta_rest/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cdot_rest/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cdot_rest/asgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/uta_rest/asgi.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cdot_rest/django_secret_key.py" beforeDir="false" afterPath="$PROJECT_DIR$/uta_rest/django_secret_key.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cdot_rest/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/uta_rest/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cdot_rest/static/favicon-16x16.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cdot_rest/static/favicon-32x32.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cdot_rest/static/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cdot_rest/static/robots.txt" beforeDir="false" afterPath="$PROJECT_DIR$/uta_rest/static/robots.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cdot_rest/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/uta_rest/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cdot_rest/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/uta_rest/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cdot_rest/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/uta_rest/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cdot_rest/wsgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/uta_rest/wsgi.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/gunicorn.service" beforeDir="false" afterPath="$PROJECT_DIR$/config/gunicorn.service" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/nginx.conf" beforeDir="false" afterPath="$PROJECT_DIR$/config/nginx.conf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manage.py" beforeDir="false" afterPath="$PROJECT_DIR$/manage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -92,7 +67,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1644317403362</updated>
-      <workItem from="1644317404652" duration="4694000" />
+      <workItem from="1644317404652" duration="4955000" />
+      <workItem from="1644401175330" duration="606000" />
     </task>
     <servers />
   </component>
